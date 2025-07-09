@@ -18,5 +18,18 @@ This allows for fair and interpretable comparisons of covariate influence across
 This package is not yet available on CRAN. To install it manually from a local directory or GitHub:
 
 ```r
-# install from GitHub in future:
-devtools::install_github("MollicMeyer/meanNormalizedUsage")
+# Install from GitHub
+# install.packages("remotes")
+remotes::install_github("MollicMeyer/meanNormalizedUsage")
+
+# Load the package
+library(meanNormalizedUsage)
+
+# Load example data (you must have this file downloaded or included in your repo)
+df <- read.csv(system.file("extdata", "cubistusage.csv", package = "meanNormalizedUsage"))
+
+# Clean and normalize
+df_processed <- process_mnu(df)
+
+# Plot results
+plot_mnu(df_processed)
