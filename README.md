@@ -19,8 +19,7 @@ This package is not yet available on CRAN. To install it manually from a local d
 
 ```r
 # Install from GitHub
-# install.packages("remotes")
-remotes::install_github("MollicMeyer/meanNormalizedUsage")
+remotes::install_github("MollicMeyer/mean-normalized-usage")
 
 # Load the package
 library(meanNormalizedUsage)
@@ -29,7 +28,7 @@ library(meanNormalizedUsage)
 df <- read.csv(system.file("extdata", "cubistusage.csv", package = "meanNormalizedUsage"))
 
 # Clean and normalize
-df_processed <- process_mnu(df)
+df_mnu <- mean_normalized_usage(df)
 
 # Plot results
-plot_mnu(df_processed)
+plot_mnu(df_mnu)
