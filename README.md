@@ -18,7 +18,5 @@ This allows for fair and interpretable comparisons of covariate influence across
 This package is not yet available on CRAN. To install it manually from a local directory or GitHub:
 
 ```r
-# install from local directory
-
-# or if published to GitHub in future:
+# install from GitHub in future:
 devtools::install_github("MollicMeyer/meanNormalizedUsage")
