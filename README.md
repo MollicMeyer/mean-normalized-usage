@@ -19,7 +19,6 @@ This package is not yet available on CRAN. To install it manually from a local d
 
 ```r
 # install from local directory
-devtools::install("path/to/meanNormalizedUsage")
 
 # or if published to GitHub in future:
-devtools::install_github("your_username/meanNormalizedUsage")
+devtools::install_github("MollicMeyer/meanNormalizedUsage")
