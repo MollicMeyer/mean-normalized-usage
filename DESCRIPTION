@@ -1,7 +1,7 @@
 Package: meanNormalizedUsage
 Type: Package
 Title: Calculate and Visualize Mean Normalized Usage (MNU) from Cubist Models
-Version: 0.1.0
+Version: 0.0.1
 Author: Meyer P. Bohn [aut, cre]
 Maintainer: Meyer P. Bohn <mpbohn@iastate.edu>
 Description: Computes the Mean Normalized Usage (MNU) metric based on covariate importance from Cubist models, incorporating both linear model usage and rule-based conditions. Summarizes MNU across multiple soil property models, depths, and covariate groupings for visualization and interpretation of importance.
