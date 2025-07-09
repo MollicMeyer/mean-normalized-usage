@@ -1,11 +1,23 @@
 Package: meanNormalizedUsage
-Title: What the Package Does (One Line, Title Case)
-Version: 0.0.0.9000
-Authors@R: 
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"))
-Description: What the package does (one paragraph).
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
+Type: Package
+Title: Calculate and Visualize Mean Normalized Usage (MNU) from Cubist Models
+Version: 0.1.0
+Author: Meyer P. Bohn [aut, cre]
+Maintainer: Meyer P. Bohn <mpbohn@iastate.edu>
+Description: Computes the Mean Normalized Usage (MNU) metric based on covariate importance from Cubist models, incorporating both linear model usage and rule-based conditions. Summarizes MNU across multiple soil property models, depths, and covariate groupings for visualization and interpretation of importance.
+License: MIT + file LICENSE
 Encoding: UTF-8
-Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.3.2
+LazyData: true
+RoxygenNote: 7.3.1
+Depends: R (>= 3.6)
+Imports: 
+    dplyr,
+    ggplot2,
+    gridExtra,
+    stringr
+Suggests: 
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
+BugReports: https://github.com/MollicMeyer/meanNormalizedUsage/issues
+URL: https://github.com/MollicMeyer/meanNormalizedUsage
