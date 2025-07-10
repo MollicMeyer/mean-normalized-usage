@@ -19,7 +19,7 @@ This package is not yet available on CRAN. To install it manually from a local d
 
 ```r
 # Install from GitHub
-remotes::install_github("MollicMeyer/mean-normalized-usage")
+remotes::install_github("MollicMeyer/meanNormalizedUsage")
 
 # Load the package
 library(meanNormalizedUsage)
