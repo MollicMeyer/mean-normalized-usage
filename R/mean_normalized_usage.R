@@ -1,18 +1,18 @@
-# =============================================================================
-# Mean Normalized Usage Analysis for Cubist Model Covariates
-#
-# Author: Meyer P. Bohn, PhD
-#         Geospatial Laboratory for Soil Informatics
-#         Iowa State University, Department of Agronomy
-#         Date: July 9, 2025
-#
-# Description:
-# This script computes Mean Normalized Usage (MNU) for covariates used in
-# Cubist-based soil property models. It accounts for both covariate frequency
-# and model diversity, summarized by analysis scale, depth, and statistical aggregation
-# of terrain and imagery covariates.
-# =============================================================================
-
+#' =============================================================================
+#' Mean Normalized Usage Analysis for Cubist Model Covariates
+#'
+#' Author: Meyer P. Bohn, PhD
+#'         Geospatial Laboratory for Soil Informatics
+#'         Iowa State University, Department of Agronomy
+#'         Date: July 9, 2025
+#'
+#' Description:
+#' This script computes Mean Normalized Usage (MNU) for covariates used in
+#' Cubist-based soil property models. It accounts for both covariate frequency
+#' and model diversity, summarized by analysis scale, depth, and statistical aggregation
+#' of terrain and imagery covariates.
+#' =============================================================================
+#'
 #' Compute Mean Normalized Usage (MNU) from Cubist covariate importance
 #'
 #' This function reads a Cubist covariate importance table and calculates
