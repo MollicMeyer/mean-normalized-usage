@@ -1,6 +1,6 @@
 project = 'meanNormalizedUsage'
 author = 'Meyer P. Bohn'
-release = '0.1'
+release = '0.0.1'
 
 extensions = []
 
