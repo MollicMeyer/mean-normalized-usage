@@ -21,4 +21,4 @@ Parameters:
     df: Output from mean_normalized_usage() function.
 
 Returns:
-    A combined grid plot object.
+    A combined grid plot object of MNU.
