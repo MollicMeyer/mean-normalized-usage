@@ -7,4 +7,4 @@ Functions:
 ----------
 
 - mean_normalized_usage()
-- plot_MNU()
+- plot_mnu()
