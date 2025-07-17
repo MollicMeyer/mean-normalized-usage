@@ -12,7 +12,7 @@ Parameters:
 Returns:
     A processed data frame with normalized_usage and mean_normalized_usage columns.
 
-plot_MNU(df)
+plot_mnu(df)
 ------------
 
 Plot Mean Normalized Usage results for terrain and imagery covariates.
