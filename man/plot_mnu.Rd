@@ -2,17 +2,35 @@
 % Please edit documentation in R/plot_mnu.R
 \name{plot_mnu}
 \alias{plot_mnu}
-\title{Plot Mean Normalized Usage (MNU) results for terrain and imagery covariates}
+\title{Plot Mean Normalized Usage (MNU) Results}
 \usage{
 plot_mnu(df)
 }
 \arguments{
-\item{df}{Output from `mean_normalized_usage()` function.}
+\item{df}{A data frame output from `mean_normalized_usage()` with fields
+including `Deriv`, `depth_class`, `rel_scale`, `stat`, and `mean_normalized_usage`.}
 }
 \value{
-A combined grid plot object.
+A `ggplot2` object (patchwork grid of plots) showing MNU patterns across depth classes.
 }
 \description{
-Creates side-by-side ggplot2 bar charts showing MNU grouped by analysis scale
-or temporal/statistical aggregation, faceted by depth class.
+Creates side-by-side `ggplot2` bar charts showing Mean Normalized Usage (MNU)
+grouped by either analysis scale (terrain-derived covariates) or temporal/statistical
+aggregation (imagery-derived covariates), faceted by depth class.
+}
+\details{
+This function visualizes normalized covariate usage across soil depths and covariate groups.
+Plots are returned as a combined `patchwork` object for easy customization or export.
+}
+\examples{
+# Example usage:
+df_mnu <- mean_normalized_usage(your_data)
+plot_MNU(df_mnu)
+
+}
+\author{
+Meyer P. Bohn, PhD
+Geospatial Laboratory for Soil Informatics
+Iowa State University, Department of Agronomy
+Date: July 9, 2025
 }

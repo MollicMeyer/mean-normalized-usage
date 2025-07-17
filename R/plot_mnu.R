@@ -1,11 +1,31 @@
-#' Plot Mean Normalized Usage (MNU) results for terrain and imagery covariates
+#' Plot Mean Normalized Usage (MNU) Results
 #'
-#' Creates side-by-side ggplot2 bar charts showing MNU grouped by analysis scale
-#' or temporal/statistical aggregation, faceted by depth class.
+#' @author Meyer P. Bohn, PhD
+#' Geospatial Laboratory for Soil Informatics
+#' Iowa State University, Department of Agronomy
+#' Date: July 9, 2025
 #'
-#' @param df Output from `mean_normalized_usage()` function.
-#' @return A combined grid plot object.
+#' @description
+#' Creates side-by-sideggplot2 bar charts showing Mean Normalized Usage (MNU)
+#' grouped by either analysis scale (terrain-derived covariates) or temporal/statistical
+#' aggregation (imagery-derived covariates), faceted by depth class.
+#'
+#' @details
+#' This function visualizes normalized covariate usage across soil depths and covariate groups.
+#' Plots are returned as a combinedpatchwork object for easy customization or export.
+#'
+#' @param df A data frame output frommean_normalized_usage() with fields
+#' including Deriv, depth_class, rel_scale, stat, and mean_normalized_usage.
+#'
+#' @return Aggplot2 object (patchwork grid of plots) showing MNU patterns across depth classes.
+#'
+#' @examples
+#' # Example usage:
+#' df_mnu <- mean_normalized_usage(your_data)
+#' plot_MNU(df_mnu)
+#'
 #' @export
+
 plot_mnu <- function(df) {
   library(ggplot2)
   library(gridExtra)
@@ -41,8 +61,10 @@ plot_mnu <- function(df) {
 
     if (has_imagery) {
       dat_img <- dat[dat$Deriv == "Imagery", ]
-      plot_imagery <- ggplot(dat_img,
-                             aes(x = stat, y = mean_normalized_usage, fill = type2)) +
+      plot_imagery <- ggplot(
+        dat_img,
+        aes(x = stat, y = mean_normalized_usage, fill = type2)
+      ) +
         geom_col(position = "stack") +
         facet_grid(depth_class ~ ., space = "free", scales = "free_y") +
         coord_flip() +
@@ -65,8 +87,10 @@ plot_mnu <- function(df) {
 
     if (has_terrain) {
       dat_ter <- dat[dat$Deriv == "Terrain", ]
-      plot_terrain <- ggplot(dat_ter,
-                             aes(x = rel_scale, y = mean_normalized_usage, fill = type2)) +
+      plot_terrain <- ggplot(
+        dat_ter,
+        aes(x = rel_scale, y = mean_normalized_usage, fill = type2)
+      ) +
         geom_col(position = "stack") +
         facet_grid(depth_class ~ ., space = "free", scales = "free_y") +
         coord_flip() +
