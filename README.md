@@ -188,6 +188,8 @@ Where:
 This package is not yet available on CRAN. To install it manually from a local directory or GitHub:
 
 ```r
+
+remotes::install_github("MollicMeyer/meanNormalizedUsage")
 # Load the package
 library(meanNormalizedUsage)
 
@@ -200,6 +202,7 @@ df_mnu <- mean_normalized_usage(df)
 # Plot results
 plot_mnu(df_mnu)
 
+```
 ## SOFTWARE  
 
 | Name | Version | URL                           | Developer  |
