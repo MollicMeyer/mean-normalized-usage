@@ -22,7 +22,7 @@
 #' @examples
 #' # Example usage:
 #' df_mnu <- mean_normalized_usage(your_data)
-#' plot_MNU(df_mnu)
+#' plot_mnu(df_mnu)
 #'
 #' @export
 
