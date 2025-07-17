@@ -188,8 +188,9 @@ Where:
 This package is not yet available on CRAN. To install it manually from a local directory or GitHub:
 
 ```r
-
+# install the package
 remotes::install_github("MollicMeyer/meanNormalizedUsage")
+
 # Load the package
 library(meanNormalizedUsage)
 
