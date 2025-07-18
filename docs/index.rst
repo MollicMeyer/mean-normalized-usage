@@ -53,7 +53,7 @@ Columns in the Base Data
 
 .. csv-table:: Columns in the Base Data
    :header: "Column", "Description"
-   :widths: 20, 80
+   :widths: 20, 100
 
    model_conditions, Percent usage as model rule in decision tree
    model_usage, Percent usage in the multiple linear regression as a coefficient
