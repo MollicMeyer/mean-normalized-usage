@@ -46,8 +46,6 @@ CODEBOOK
 **Number Of Cases/Rows:** 10,108  
 **Missing Data Codes:** NA  
 
-
-
 Columns in the Base Data
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -56,20 +54,19 @@ Columns in the Base Data
    :widths: 25, 75
 
    model_conditions, Percent usage as model rule in decision tree
-   model_usage, Percent usage in multiple linear regression
-   covariate, Covariate name, analysis scale or year
-   Deriv, Remote-sensed derivative type (Terrain/Imagery)
+   model_usage, Percent usage in multiple linear regression as coefficient
+   covariate, Covariate name including analysis scale or year
+   Deriv, Remote-sensed derivative type (Terrain or Imagery)
    type1, Specific derivative classification
    type2, Generalized derivative classification
    stat, Statistical aggregation method
    year, Year of remote-sensed data source
-   prop, Soil property model and depth
-   soil, Soil property
+   prop, Soil property model and depth interval
+   soil, Soil property name
    depth_int, Depth interval (cm)
    depth, Cleaned depth interval name (cm)
    top_depth, Top depth of depth interval (cm)
    bot_depth, Bottom depth of depth interval (cm)
-
 
 
 Columns Produced by ``mean_normalized_usage()``
