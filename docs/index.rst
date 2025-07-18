@@ -53,10 +53,10 @@ Columns in the Base Data
 
 .. csv-table:: Columns in the Base Data
    :header: "Column", "Description"
-   :widths: 25, 100
+   :widths: 25, 75
 
    model_conditions, Percent usage as model rule in decision tree
-   model_usage, Percent usage in the multiple linear regression as a coefficient
+   model_usage, Percent usage in multiple linear regression
    covariate, Covariate name, analysis scale or year
    Deriv, Remote-sensed derivative type (Terrain/Imagery)
    type1, Specific derivative classification
@@ -69,6 +69,7 @@ Columns in the Base Data
    depth, Cleaned depth interval name (cm)
    top_depth, Top depth of depth interval (cm)
    bot_depth, Bottom depth of depth interval (cm)
+
 
 
 Columns Produced by ``mean_normalized_usage()``
